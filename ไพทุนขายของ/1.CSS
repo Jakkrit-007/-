@@ -1,0 +1,256 @@
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background: linear-gradient(90deg, black, rgb(0, 98, 128));  
+} 
+ 
+ 
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #fff; 
+    padding: 10px 20px; 
+    color: white; 
+} 
+ 
+.logo { 
+    display: flex; 
+    align-items: center; 
+} 
+ 
+.logo img { 
+    height: 40px; 
+    margin-right: 10px; 
+} 
+ 
+.cart { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+} 
+ 
+.cart-icon { 
+    position: relative; 
+    font-size: 24px; 
+    cursor: pointer; 
+} 
+ 
+.cart-count { 
+    position: absolute; 
+    top: -5px; 
+    right: -10px; 
+    background: white; 
+    color: #fff; 
+    border-radius: 50%; 
+    padding: 3px 7px; 
+    font-size: 12px; 
+} 
+ 
+ 
+.main { 
+    display: flex; 
+} 
+ 
+ 
+.sidebar { 
+    width: 20%; 
+    background: black;
+    padding: 10px; 
+} 
+ 
+.sidebar input { 
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+} 
+ 
+.sidebar nav button { 
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 5px; 
+    background: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+ 
+.sidebar nav button:hover { 
+    background: #dddddd; 
+} 
+ 
+.products { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 10px; 
+    padding: 10px; 
+    width: 80%; 
+} 
+ 
+.product-card { 
+    text-align: center; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background: #fff; 
+    position: relative; 
+} 
+ 
+ 
+.dropdown { 
+    position: relative; 
+} 
+ 
+.dropdown-menu { 
+    position: absolute; 
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: none; 
+    background: linear-gradient(90deg, black, rgb(0, 98, 128));  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    z-index: 10; 
+    text-align: center; 
+    width: 200px; 
+} 
+ 
+.dropdown-menu img { 
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: transform 0.2s ease; 
+} 
+ 
+.dropdown-menu img:hover { 
+    transform: scale(1.1); 
+} 
+ 
+.product-card:hover .dropdown-menu { 
+    display: block; 
+} 
+ 
+.footer { 
+    background: linear-gradient(90deg, black, rgb(0, 98, 128));  ; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+} 
+ 
+.footer-links a { 
+    color: white; 
+    margin: 0 10px; 
+    text-decoration: none; 
+    font-size: 14px; 
+} 
+ 
+.footer-links a:hover { 
+    text-decoration: underline; 
+} 
+ 
+.product-link { 
+    text-decoration: none; 
+    color: black; 
+    display: block;  
+    transition: transform 0.2s ease; 
+} 
+ 
+.product-link:hover { 
+    transform: scale(1.05);  
+} 
+ 
+ 
+ 
+.product-card img { 
+    width: 100%;  
+    height: 200px;  
+    object-fit: cover;  
+    border-radius: 8px;  
+} 
+ 
+ 
+.dropdown-menu { 
+    z-index: 10;  
+} 
+ 
+.navbar { 
+    background: linear-gradient(90deg, black, rgb(0, 98, 128));/* ไล่สี */ 
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+} 
+ 
+ 
+.navbar-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1200px;  
+} 
+ 
+ 
+.navbar-logo { 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #fff; 
+    text-decoration: none; 
+} 
+ 
+ 
+.navbar-menu { 
+    display: flex; 
+    gap: 20px;  
+} 
+ 
+ 
+.navbar-menu a { 
+    text-decoration: none; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    color: #fff; 
+    transition: color 0.3s ease; 
+} 
+ 
+ 
+.navbar-menu a:hover { 
+    color: #ffe259;  
+} 
+ 
+.navbar-container { 
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    width: 100%; 
+    max-width: 1200px; 
+} 
+ 
+ 
+.navbar-logo { 
+    display: flex;  
+    align-items: center;  
+    gap: 10px;  
+} 
+ 
+.navbar-logo img { 
+    height: 40px;  
+    width: auto;  
+} 
+ 
+.navbar-logo h1 { 
+    font-size: 1.5rem;  
+    color: #fff;  
+    margin: 0;  
+}
